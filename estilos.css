@@ -15,7 +15,7 @@ html{
     header nav{ 
         height: 80px;
         width: 100%;
-        background-color:green;
+        background-color: white;
         position: fixed;
         display: flex;
         flex-direction: row;
