@@ -11,86 +11,159 @@ html{
     scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1023px) {
-    header nav{ 
+/* estilos mobile */
+
+/* estilos nav */
+
+.navbar{
+    background-color: white !important;
+    border-bottom: 2px solid black;
+    height: 80px;
+}
+
+.nav-link {
+    font-size: 14px;
+    color: black !important;
+}
+
+#navbarNav{
+    background-color: white;
+}
+
+/* estilos main */
+
+article{
+    /* border: 2px solid black; */
+    height:500px;
+}
+
+#img-izq{
+    width: 100%;
+    height: 500px;
+    /* background-color: violet; */
+    background-image: url(/imagenes/ceramica4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+#img-der{
+    width: 100%;
+    height: 500px;
+    /* background-color: orange; */
+    background-image: url(/imagenes/imagen1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#boton1{
+    font-size: 25px;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#sec2{
+    border-top: #000 1px solid;
+}
+
+#sec2 p{
+    width: 100%;
+    text-align:right;
+    border-bottom: 1px solid #000;
+    font-size: 17px;
+    padding-top: 41.5px;
+    padding-bottom: 41.5px;
+    padding-right: 18px;
+}
+
+#sec2 p a{
+    text-decoration: underline;
+    color:black;
+}
+
+#sec3 form {
+    height: 100px;
+    width: 100%;
+    /* text-transform:uppercase; */
+    text-align: center;
+    color:black;
+    font-size: 14px;
+    height: 150px;
+}
+
+footer{
+    height:60px;
+    font-weight: 100%;
+    background-color:#d9d9d9;
+}
+
+footer ul li{
+    font-size: 14px;
+    padding-top: 23px;
+    padding-right: 23px;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+footer ul a {
+    color:black;
+    text-decoration: none;
+}
+
+/* estilos page about */
+
+#main-about{
+    height: 500px;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+#main-about div p{
+    font-size: 16px;
+    height: 400px;
+    width: 100%;
+    padding: 30px 30px;
+}
+
+#img3{
+    background-image: url(/imagenes/taller1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar{
+        background-color: white !important;
+        border-bottom: 2px solid black;
         height: 80px;
-        width: 100%;
-        background-color: white;
-        position: fixed;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
     }
     
-    .logo {
-        font-size: 18px;
-        height: 80px;
-        width: 20%;
-        background-color:white;
-        padding: 20px 31px 20px 31px;
-        border-bottom: 2px solid #000;
-    }
-    
-    .menu{
-        height: 80px;
-        width: 80%;
-        background-color:white;
+    .nav-link {
         font-size: 14px;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-        padding-top: 33px;
-        padding-bottom: 33px;
-        border-bottom: 2px solid #000;
+        color: black !important;
     }
     
-    nav a {
-        text-decoration: none;
-        color:#000;
-    }
-    
-    nav ul li {
-        display: inline-block;
-        position: relative;
-        color:#000;
-    }
-    
-    /*subitems menú*/
-    
-    nav ul ul {
-        position: absolute;
-        display: none;
-    }
-    
-    ul ul li {
-        display: block;
+    #navbarNav{
         background-color: white;
     }
     
-    ul li:hover ul {
-        display: block;
-    }
+    /* estilos main */
     
-    nav li:hover a{
-        color:#bfb8ae;
-    }
+    /* .row{
+        border-bottom: 1px solid black;
+    } */
     
-    #main-index {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        padding-top: 80px;
-        /* background-color: red; */
-    }
-    
-    #sec1{
-        display:flex;
-        flex-direction: column;
-        width: 100%;
+    article{
+        /* border: 2px solid black; */
         height:900px;
-        border-bottom: #000 1px solid;
     }
     
     #img-izq{
@@ -100,12 +173,12 @@ html{
         background-image: url(/imagenes/ceramica4.jpeg);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 70%;
+        background-size: 80%;
     }
     
     #img-der{
         width: 100%;
-        height: 899px;
+        height: 900px;
         /* background-color: orange; */
         background-image: url(/imagenes/imagen1.jpeg);
         background-position: center;
@@ -122,13 +195,8 @@ html{
         transform: translate(-50%, -50%);
     }
     
-    #boton2{
-        font-size: 25px;
-        color:white;
-        position: absolute;
-        top: 100%;
-        right: 50%;
-        transform: translate(50%, -50%);
+    #sec2{
+        border-top: #000 1px solid;
     }
     
     #sec2 p{
@@ -139,7 +207,6 @@ html{
         padding-top: 41.5px;
         padding-bottom: 41.5px;
         padding-right: 18px;
-        /* background-color: red; */
     }
     
     #sec2 p a{
@@ -148,314 +215,21 @@ html{
     }
     
     #sec3 form {
-        height: 150px;
-        width: 100%;
-        text-transform:uppercase;
-        text-align: center;
-        color:black;
-        font-size: 14px;
-        padding-top: 51px;
-        padding-bottom: 51px;
-    }
-
-    footer{
-        height:100px;
-        font-weight: 100%;
-        background-color:#d9d9d9;
-    }
-    
-    footer ul li{
-        font-size: 14px;
-        padding-top: 43px;
-        padding-right: 43px;
-        display: inline-block;
-        padding-left: 20px;
-    }
-    
-    footer ul a {
-        color:black;
-    }
-
-    /* estilos page shop online */
-
-    #main-shop{
-        width: 100%;
-        height: 100%;
-        border-bottom: 1px solid #000;
-        padding-top: 80px;
-        /* background-color: red; */
-    }
-    
-    .galeria{
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 10px;
-        column-gap: 10px;
-        align-items: center;
-        justify-items: center;
-        /* background-color: red; */
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    
-    .items{
-        /* border: #000 2px solid; */
-        height: 455px;
-        width: 340px;
-        display: flex;
-        flex-direction: column;
-    } 
-    
-    .product-img{
-        /* background-color: rgb(112, 109, 106); */
-        height: 400px;
-        width: 340px;
-    } 
-    
-    .product-name{
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 340px;
-        height: 55px;
-        padding: 10px 10px;
-        color:#000;
-    }
-    
-    .product-name a {
-        color: black;
-        text-decoration: none;    
-    }
-    
-    .product-name h5:hover a{
-        color:#bfb8ae;
-    }
-    
-    #item1{
-        background-image: url(/imagenes/ceramica1.jpeg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    
-    #item2{
-        background-image: url(/imagenes/ceramica2.jpeg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    
-    #item3{
-        background-image: url(/imagenes/ceramica3.jpeg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    
-    #item4{
-        background-image: url(/imagenes/ceramica4.jpeg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    
-    #item5{
-        background-image: url(/imagenes/ceramica5.jpeg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    
-    #item6{
-        background-image: url(/imagenes/ceramica5.jpeg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    
-    #item7{
-        background-image: url(/imagenes/producto2.jpeg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    
-    #item8{
-        background-image: url(/imagenes/imagen1.jpeg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    /* estilos page about*/
-    #main-about{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 1000px;
-        width: 100%;
-        height: 100%;
-        padding-top: 80px;
-        /* background-color: red; */
-    }
-
-    #main-about p{
-        font-size: 16px;
-        height: 200px;
-        width: 100%;
-        padding: 30px 30px;
-    }
-    
-    #img3{
-        background-image: url(/imagenes/taller1.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 400px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    header nav{
-        height: 80px;
-        width: 100%;
-        background-color:white;
-        position: fixed;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-
-    .logo {
-    font-size: 18px;
-    height: 80px;
-    width: 20%;
-    background-color:white;
-    padding: 20px 31px 20px 31px;
-    border-bottom: 2px solid #000;
-    }
-    .menu{
-        width: 80%;
-        background-color:white;
-        font-size: 14px;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-        padding-top: 33px;
-        padding-bottom: 33px;
-        border-bottom: 2px solid #000;
-        height: 80px;
-    }
-
-    nav a {
-    text-decoration: none;
-    color:#000;
-    }
-
-    nav ul li {
-        position: relative;
-        color:#000;
-        display: inline-block;
-    }
-
-    /*subitems menú*/
-
-    nav ul ul {
-        display: none;
-        position: absolute;
-    }
-
-    ul ul li {
-        background-color: white;
-        display: block;
-    }
-
-    ul li:hover ul {
-        display: block;
-    }
-
-    nav li:hover a{
-        color:#bfb8ae; 
-    }
-    /*main - home*/
-    #main-index {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 100%;
-        padding-top: 80px;
-        /* background-color: red; */
-    }
-
-    #sec1{
-        display:flex;
-        flex-direction: row;
-        width: 100%;
-        height:900px;
-        border-bottom: #000 1px solid;
-    }
-
-    #img-izq{
-        width: 50%;
-        height: 900px;
-        /* background-color: violet; */
-        background-image: url(/imagenes/ceramica4.jpeg);
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    #img-der{
-        width: 50%;
-        height: 899px;
-        background-color: orange;
-        background-image: url(/imagenes/imagen1.jpeg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    #boton1{
-        font-size: 25px;
-        color:white;
-        position: absolute;
-        top: 50%;
-        left: 25%;
-        transform: translate(-50%, -50%);
-    }
-
-    #boton2{
-        font-size: 25px;
-        color:white;
-        position: absolute;
-        top: 50%;
-        right: 25%;
-        transform: translate(50%, -50%);
-    }
-    
-    #sec2 p{
         height: 100px;
         width: 100%;
-        text-align:right;
-        border-bottom: 1px solid #000;
-        font-size: 17px;
-        padding-top: 41.5px;
-        padding-bottom: 41.5px;
-        padding-right: 20px;
-    }
-    #sec2 p a{
-        text-decoration: underline;
-        color:black;
-    }
-    #sec3 form {
-        height: 150px;
-        width: 100%;
-        text-transform:uppercase;
+        /* text-transform:uppercase; */
         text-align: center;
         color:black;
         font-size: 16px;
-        padding-top: 51px;
-        padding-bottom: 51px;
+        height: 150px;
     }
+    
     footer{
         height:100px;
         font-weight: 100%;
         background-color:#d9d9d9;
     }
+    
     footer ul li{
         font-size: 14px;
         padding-top: 43px;
@@ -463,159 +237,34 @@ html{
         display: inline-block;
         padding-left: 20px;
     }
+    
     footer ul a {
         color:black;
-    }
-    /* estilos page about*/
-    #main-about{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 1000px;
-        width: 100%;
-        height: 100%;
-        padding-top: 80px;
-        /* background-color: red; */
+        text-decoration: none;
     }
 
-    #main-about p{
-        font-size: 16px;
-        height: 200px;
-        width: 50%;
-        padding: 30px 30px;
-        /* background-color: violet; */
-    }
-    
-    #img3{
-        background-image: url(/imagenes/taller1.jpeg);
-        background-position: center;
-        background-size: cover;
-        height: 920px;
-        width: 50%;
-    }
+    /* estilos page about */
 
-    /*estilos- page shop online*/
-    
-    #main-shop{
-        width: 100%;
-        height: 100%;
-        border-bottom: 1px solid #000;
-        padding-top: 80px;
-        /* background-color: red; */
-    }
-    
-    .galeria{
-        display: grid;
-        grid-template-columns: 340px 340px 340px 340px;
-        row-gap: 10px;
-        column-gap: 10px;
-        align-content: center;
-        justify-content: space-evenly;
-        /* background-color: red; */
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    
-    .items{
-        /* border: #000 2px solid; */
-        height: 455px;
-        width: 340px;
-        display: flex;
-        flex-direction: column;
-    } 
-    
-    .product-img{
-        /* background-color: rgb(112, 109, 106); */
-        height: 400px;
-        width: 340px;
-    } 
-    
-    .product-name{
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 340px;
-        height: 55px;
-        padding: 10px 10px;
-        color:#000;
-    }
-    
-    .product-name a {
-        color: black;
-        text-decoration: none;    
-    }
-    
-    .product-name h5:hover a{
-        color:#bfb8ae;
-    }
-    
-    #item1{
-        background-image: url(/imagenes/ceramica1.jpeg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    
-    #item2{
-        background-image: url(/imagenes/ceramica2.jpeg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    
-    #item3{
-        background-image: url(/imagenes/ceramica3.jpeg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    
-    #item4{
-        background-image: url(/imagenes/ceramica4.jpeg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    
-    #item5{
-        background-image: url(/imagenes/ceramica5.jpeg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    
-    #item6{
-        background-image: url(/imagenes/ceramica5.jpeg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    
-    #item7{
-        background-image: url(/imagenes/producto2.jpeg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    
-    #item8{
-        background-image: url(/imagenes/imagen1.jpeg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    
-    /*estilos page contacto*/
-    
-    #main-contact{
-        width: 100%;
-        height: 700px;
-        border-bottom: 1px solid #000;
-        padding-top: 80px;
-    }
-    
-    /*estilos page newsletter*/
-    
-    #main-newsletter{
-        width: 100%;
-        height: 700px;
-        border-bottom: 1px solid #000;
-        padding-top: 80px;
-    }
+#main-about{
+    height: 900px;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
 
+#main-about div p{
+    font-size: 16px;
+    height: 500px;
+    width: 100%;
+    padding: 30px 30px;
+}
+
+#img3{
+    background-image: url(/imagenes/taller1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 900px;
+}
 }
